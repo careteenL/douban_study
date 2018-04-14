@@ -1,13 +1,11 @@
 基于NodeJs+MongoDB+jQuery搭建的豆瓣电影音乐网站
 ========================================
 
-## [项目预览地址](http://39.108.179.151:3001)
+## [项目预览地址](http://47.104.199.27:3001)
 
 简介:
 ---------------
-本项目电影和音乐首页交互代码是由jQuery完成，下面两个项目将部分交互功能使用模块化进行了重写，提高了阅读性和维护性，可供参考:
-- <a href="https://github.com/Loogeek/douban-React" target="\_blank">douban-React</a>项目中尝试了将部分代码使用React来重写。
-- <a href="https://github.com/Loogeek/douban-Vue" target="\_blank">douban-Vue</a>项目中尝试了将部分代码使用Vue.js进行了重写。
+本项目电影和音乐首页交互代码是由jQuery完成
 
 **1. 项目后端搭建:**
   * 使用`NodeJs的express`框架完成电影网站后端搭建;
