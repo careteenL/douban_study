@@ -1,7 +1,7 @@
 基于NodeJs+MongoDB+jQuery搭建的豆瓣电影音乐网站
 ========================================
 
-## [项目预览地址](http://47.104.199.27:3001)
+## [项目预览地址](http://movie.careteen.wang)
 
 简介:
 ---------------
@@ -65,7 +65,7 @@
 ----
 1. 启动数据库`mongod`,如果出现错误尝试输入`sudo mongod`来完成启动
 2. 项目目录下的doubanDatabase是可供选择导入的数据库信息，可通过命令`mongorestore -h host -d dataName --dir=path` 来导入该文件夹信息到数据库中，其中-h是连接地址，如127.0.0.1 -d是将要创建数据库的名称，如douban(注意:项目中链接的数据库名称是douban,如果-d后创建的数据库名称叫douban2,则需要将app.js文件`dbUrl = 'mongodb://127.0.0.1/douban`中的douban改成douban2),--dir=后为该doubanDatabase所在路径，具体可通过`mongorestore --help`查看
-3. 使用命令行工具在该项目目录下使用gulp运行程序,默认是使用3000端口，若端口已占用可在主目录app.js文件中将3000端口换成未占用的端口，当命令行工具看到：Movie started on； port:3000时在游览器中输入localhost:3000即可看到项目电影主页;
+3. 使用命令行工具在该项目目录下使用gulp运行程序,默认是使用3001端口，若端口已占用可在主目录app.js文件中将3001端口换成未占用的端口，当命令行工具看到：Movie started on； port:3001时在游览器中输入localhost:3001即可看到项目电影主页;
 4. doubanDatabase中存储了默认的管理员账号:1234 密码:1234 权限为50，只有当权限大于10才可以访问后台控制页面，可通过修改数据库中users中role值完成用户权限控制。
 
 
@@ -73,31 +73,31 @@
 -------
 当使用管理员账号登录时(默认账号密码均是1234)可在顶部搜索栏下显示各后台控制页面的链接，方便页面切换。
 
-**豆瓣电影首页:** localhost:3000/  
+**豆瓣电影首页:** localhost:3001/  
 
-**豆瓣音乐:** localhost:3000/musicIndex
+**豆瓣音乐:** localhost:3001/musicIndex
 
 **用户后台页:**
-- 用户注册页面: localhost:3000/signup
-- 用户登陆页面: localhost:3000/signin
-- 用户详情列表页: localhost:3000/admin/user/list
+- 用户注册页面: localhost:3001/signup
+- 用户登陆页面: localhost:3001/signin
+- 用户详情列表页: localhost:3001/admin/user/list
 
 **电影后台页:**
-- 详情页:localhost:3000/movie/:id
-- 后台录入页:localhost:3000/admin/movie/new
-- 列表页:localhost:3000/admin/movie/list
-- 分类录入页:localhost:3000/admin/movie/movieCategory/new
-- 分类页:localhost:3000/admin/movie/movieCategory/list
-- 电影院录入页:localhost:3000/admin/movie/programme/new
-- 电影院列表页:localhost:3000/admin/movie/city/list
+- 详情页:localhost:3001/movie/:id
+- 后台录入页:localhost:3001/admin/movie/new
+- 列表页:localhost:3001/admin/movie/list
+- 分类录入页:localhost:3001/admin/movie/movieCategory/new
+- 分类页:localhost:3001/admin/movie/movieCategory/list
+- 电影院录入页:localhost:3001/admin/movie/programme/new
+- 电影院列表页:localhost:3001/admin/movie/city/list
 
 **音乐后台页:**
-- 详情页:localhost:3000/music/:id
-- 后台录入页:localhost:3000/admin/music/new
-- 列表页:localhost:3000/admin/music/list
-- 分类录入页:localhost:3000/admin/music/musicCategory/new
-- 分类页:localhost:3000/admin/music/musicCategory/new
-- 热门榜单列表页:localhost:3000/admin/music/programme/list
+- 详情页:localhost:3001/music/:id
+- 后台录入页:localhost:3001/admin/music/new
+- 列表页:localhost:3001/admin/music/list
+- 分类录入页:localhost:3001/admin/music/musicCategory/new
+- 分类页:localhost:3001/admin/music/musicCategory/new
+- 热门榜单列表页:localhost:3001/admin/music/programme/list
 
 项目结构:
 ----
